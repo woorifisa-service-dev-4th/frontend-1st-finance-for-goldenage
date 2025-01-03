@@ -85,45 +85,6 @@
             ```html
             <input type="text" id="user_id" title="사용자ID" class="input_txt" style="width:100px">
             ```
-    
-    - CSS
-        - 모든 속성은 영문 소문자로만 작성한다.
-            ```css
-            /* 잘못된 예 */
-            .class{font-family:AppleGothic}
-          
-            /* 올바른 예 */
-            .class{font-family:AppleGothic}
-            ```
-        - 마지막 세미콜론 사용을 지양한다.
-            ```css
-            /* 잘못된 예 */
-            .class{font-family:AppleGothic;}
-            
-            /* 올바른 예 */
-            .class{font-family:AppleGothic}
-            ```
-        - 의미 있는 객체를 구분하기 위하여 코드 그룹 간 1줄씩 빈 줄을 넣을 수 있다. 단, 빈 줄의 간격은 1줄을 초과하지 않게 한다.
-        - 속성, 속성 값 사이 줄 바꿈은 허용하지 않는다.단, 선택자와 중괄호”{}”가 중첩되는 경우 예외로 한다.
-            ```css
-            /* 잘못된 예 */
-            .class1,
-            .class2,
-            .class3{
-                    width:
-                            100px;
-                    color:
-                            #000
-            }
-          
-            /* 올바른 예 */
-            .class1,.class2,.class3{width:100px;color:#000}
-          
-            /* 올바른 예 */
-            .class1,
-            .class2,
-            .class3{width:100px;color:#000}
-            ```
 
 ### Branch Strategy
 
