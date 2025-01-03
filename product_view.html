@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            content: [
-                './index.html'
-            ],
-            theme: {
-                extend: {
-                    colors: {
-                        'wooriDeepBlue': '#0762b1',
-                        'wooriWhite': '#FFFFFF',
-                        'wooriLightBlue': '#36bcf6',
-                        'wooriBlue': '#057ecd'
-                    },
-                },
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./src/font/fonts.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: [
+        './index.html'
+      ],
+      theme: {
+        extend: {
+          colors: {
+            'wooriDeepBlue': '#0762b1',
+            'wooriWhite': '#FFFFFF',
+            'wooriLightBlue': '#36bcf6',
+            'wooriBlue': '#057ecd'
+          },
+        },
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="./src/font/fonts.css" />
 </head>
+
 <body>
 
-<main class="py-8">
+  <main class="py-8">
     <!-- Header -->
     <nav class="bg-white py-2 px-4 lg:px-8 md:px-6 mb-6 sm:px-3 shadow-md w-full">
-        <div class="container mx-auto flex items-center justify-between max-w-full px-4">
-            <!-- 우리 금융 로고 -->
-            <div class="flex-shrink-0 w-[15rem] sm:w-[12rem] md:w-[14rem] lg:w-[15rem]">
-                <a href="#" class="hover:opacity-80">
-                    <img src="./src/img/logo.svg" alt="우리은행" class="w-full h-auto"/>
-                </a>
-            </div>
-            <!-- // 우리 금융 로고 -->
-
-            <!-- 메뉴 (아이콘 + 글자) -->
-            <div class="flex items-center gap-4 sm:gap-6 md:gap-8 flex-nowrap overflow-x-auto w-full">
-                <!-- 예금 메뉴 -->
-                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/저축.svg" alt="저축" class="w-[3rem] h-[2.5rem]" />
-                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">예금</span>
-                </a>
-                <!-- // 예금 메뉴 -->
-
-                <!-- 외환 메뉴 -->
-                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/외환.svg" alt="외환" class="w-[3rem] h-[2.5rem]" />
-                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">외환</span>
-                </a>
-                <!-- // 외환 메뉴 -->
-
-                <!-- 대출 메뉴 -->
-                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/대출1.svg" alt="대출" class="w-[3rem] h-[2.5rem]" />
-                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">대출</span>
-                </a>
-                <!-- // 대출 메뉴 -->
-
-                <!-- 펀드 메뉴 -->
-                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/펀드.svg" alt="펀드" class="w-[3rem] h-[2.5rem]" />
-                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">펀드</span>
-                </a>
-                <!-- // 펀드 메뉴 -->
-
-            </div>
-
-            <!-- 유저 프로필 이미지 -->
-            <div class="flex-shrink-0 w-[5rem] sm:w-[5rem]">
-                <a href="#" class="hover:opacity-80">
-                    <img src="./src/img/user.png" alt="유저 프로필" class="w-full h-auto"/>
-                </a>
-            </div>
-            <!-- // 유저 프로필 이미지 -->
+      <div class="container mx-auto flex items-center justify-between max-w-full px-4">
+        <!-- 우리 금융 로고 -->
+        <div class="flex-shrink-0 w-[15rem] sm:w-[12rem] md:w-[14rem] lg:w-[15rem]">
+          <a href="#" class="hover:opacity-80">
+            <img src="./src/img/logo.svg" alt="우리은행" class="w-full h-auto" />
+          </a>
         </div>
+        <!-- // 우리 금융 로고 -->
+
+        <!-- 메뉴 (아이콘 + 글자) -->
+        <div class="flex items-center gap-4 sm:gap-6 md:gap-8 flex-nowrap overflow-x-auto w-full">
+          <!-- 예금 메뉴 -->
+          <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+            <img src="./src/img/저축.svg" alt="저축" class="w-[3rem] h-[2.5rem]" />
+            <span
+              class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">예금</span>
+          </a>
+          <!-- // 예금 메뉴 -->
+
+          <!-- 외환 메뉴 -->
+          <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+            <img src="./src/img/외환.svg" alt="외환" class="w-[3rem] h-[2.5rem]" />
+            <span
+              class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">외환</span>
+          </a>
+          <!-- // 외환 메뉴 -->
+
+          <!-- 대출 메뉴 -->
+          <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+            <img src="./src/img/대출1.svg" alt="대출" class="w-[3rem] h-[2.5rem]" />
+            <span
+              class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">대출</span>
+          </a>
+          <!-- // 대출 메뉴 -->
+
+          <!-- 펀드 메뉴 -->
+          <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+            <img src="./src/img/펀드.svg" alt="펀드" class="w-[3rem] h-[2.5rem]" />
+            <span
+              class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">펀드</span>
+          </a>
+          <!-- // 펀드 메뉴 -->
+
+        </div>
+
+        <!-- 유저 프로필 이미지 -->
+        <div class="flex-shrink-0 w-[5rem] sm:w-[5rem]">
+          <a href="#" class="hover:opacity-80">
+            <img src="./src/img/user.png" alt="유저 프로필" class="w-full h-auto" />
+          </a>
+        </div>
+        <!-- // 유저 프로필 이미지 -->
+      </div>
     </nav>
     <!-- // Header -->
 
@@ -86,49 +92,52 @@
     <div class="mb-3 mx-48 pb-4 border-b text-5xl font-bold">적금</div>
 
     <!-- 상품 항목 1 -->
-    <div class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
-        <!-- 이미지 -->
-        <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
+    <div
+      class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
+      <!-- 이미지 -->
+      <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
 
-        <!-- 금융 상품 설명 -->
-        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
-            <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
-            <div class="w-full text-4xl font-bold">WON 적금</div>
-            <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
-        </div>
-        <!-- // 금융 상품 설명 -->
+      <!-- 금융 상품 설명 -->
+      <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
+        <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
+        <div class="w-full text-4xl font-bold">WON 적금</div>
+        <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
+      </div>
+      <!-- // 금융 상품 설명 -->
 
-        <!-- 금리 정보 -->
-        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
-            <div class="text-xl">최고 연</div>
-            <div class="text-4xl font-bold">3.6%</div>
-            <div class="text-xl">(12개월)</div>
-        </div>
-        <!-- // 금리 정보 -->
+      <!-- 금리 정보 -->
+      <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+        <div class="text-xl">최고 연</div>
+        <div class="text-4xl font-bold">3.6%</div>
+        <div class="text-xl">(12개월)</div>
+      </div>
+      <!-- // 금리 정보 -->
     </div>
 
     <!-- 상품 항목 2 -->
-    <div class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
-        <!-- 이미지 -->
-        <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
+    <div
+      class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
+      <!-- 이미지 -->
+      <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
 
-        <!-- 금융 상품 설명 -->
-        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
-            <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
-            <div class="w-full text-4xl font-bold">WON 적금</div>
-            <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
-        </div>
-        <!-- // 금융 상품 설명 -->
+      <!-- 금융 상품 설명 -->
+      <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
+        <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
+        <div class="w-full text-4xl font-bold">WON 적금</div>
+        <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
+      </div>
+      <!-- // 금융 상품 설명 -->
 
-        <!-- 금리 정보 -->
-        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
-            <div class="text-xl">최고 연</div>
-            <div class="text-4xl font-bold">3.6%</div>
-            <div class="text-xl">(12개월)</div>
-        </div>
-        <!-- // 금리 정보 -->
+      <!-- 금리 정보 -->
+      <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+        <div class="text-xl">최고 연</div>
+        <div class="text-4xl font-bold">3.6%</div>
+        <div class="text-xl">(12개월)</div>
+      </div>
+      <!-- // 금리 정보 -->
     </div>
-</main>
+  </main>
 
 </body>
+
 </html>
