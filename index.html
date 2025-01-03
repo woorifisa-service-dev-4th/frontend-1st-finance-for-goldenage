@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우리은행_골든뱅킹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/font/fonts.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white py-4 px-4 h-190 md:px-16 shadow-md">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col md:flex-row md:justify-around md:items-center space-y-4 md:space-y-0"
+        >
+          <!-- 로고 -->
+          <div class="flex-shrink-0">
+            <img
+              src="./src/img/logo.svg"
+              alt="우리은행"
+              class="w-[437px] h-[114px]"
+            />
+          </div>
+
+          <!-- 메뉴 -->
+          <div
+            class="mx-[35px] flex items-center space-x-6 font-daumBold text-4xl"
+          >
+            <!-- 예금 -->
+            <button
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <img
+                src="./src/img/저축.svg"
+                alt=""
+                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
+              />
+              <span class="text-gray-700 text-[64px]">예금</span>
+            </button>
+
+            <!-- 외환 -->
+            <button
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <img
+                src="./src/img/외환.svg"
+                alt=""
+                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
+              />
+              <span class="text-gray-700 text-[64px]">외환</span>
+            </button>
+
+            <!-- 대출 -->
+            <button
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <img
+                src="./src/img/대출1.svg"
+                alt=""
+                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
+              />
+              <span class="text-gray-700 text-[64px]">대출</span>
+            </button>
+
+            <!-- 펀드 -->
+            <button
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <img
+                src="./src/img/펀드.svg"
+                alt=""
+                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
+              />
+              <span class="text-gray-700 text-[64px]">펀드</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h2 class="font-daumBold text-2xl">
+        우리은행 골든뱅킹 서비스 페이지입니다.
+      </h2>
+    </main>
+    <footer></footer>
+  </body>
+</html>
