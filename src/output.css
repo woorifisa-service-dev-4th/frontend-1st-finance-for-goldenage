@@ -592,6 +592,11 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.mx-\[35px\] {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -599,6 +604,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mt-8 {
@@ -617,6 +626,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -631,6 +644,14 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-6 {
@@ -748,6 +769,15 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[64px\] {
+  font-size: 64px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -851,8 +881,8 @@ video {
     align-items: center;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -884,6 +914,14 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:h-12 {
+    height: 3rem;
+  }
+
+  .xl\:w-12 {
+    width: 3rem;
+  }
+
   .xl\:w-48 {
     width: 12rem;
   }

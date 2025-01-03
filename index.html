@@ -10,77 +10,110 @@
   </head>
   <body class="bg-gray-100">
     <!-- Navigation Bar -->
-    <nav class="bg-white py-4 px-4 h-190 md:px-16 shadow-md">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-col md:flex-row md:justify-around md:items-center space-y-4 md:space-y-0"
-        >
-          <!-- 로고 -->
-          <div class="flex-shrink-0">
+    <nav class="bg-white py-2 px-2 lg:px-4 md:px-2 sm:px-1 shadow-md">
+      <div
+        class="container mx-auto max-w-[1030px] flex items-center gap-2 md:gap-3 lg:gap-4 flex-nowrap"
+      >
+        <!-- 로고 -->
+        <div class="flex-shrink-0">
+          <a href="#" class="hover:opacity-80">
             <img
               src="./src/img/logo.svg"
               alt="우리은행"
-              class="w-[437px] h-[114px]"
+              class="w-[16rem] md:w-[14rem] lg:w-[16rem] h-auto"
             />
-          </div>
+          </a>
+        </div>
 
-          <!-- 메뉴 -->
-          <div
-            class="mx-[35px] flex items-center space-x-6 font-daumBold text-4xl"
+        <!-- 메뉴 -->
+        <div class="flex items-center gap-2 md:gap-2 lg:gap-3 sm:gap-1 flex-nowrap">
+          <!-- 예금 -->
+          <a
+            href="#"
+            class="flex items-center space-x-3 hover:bg-gray-100 px-1 py-1 rounded transition"
           >
-            <!-- 예금 -->
-            <button
-              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+            <img
+              src="./src/img/저축.svg"
+              alt="저축"
+              class="w-[2.5rem] h-[2rem]"
+            />
+            <span
+              class="text-gray-900 font-daumBold"
+              style="font-size: clamp(1.3rem, 2vw, 2.5rem);"
             >
-              <img
-                src="./src/img/저축.svg"
-                alt=""
-                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
-              />
-              <span class="text-gray-700 text-[64px]">예금</span>
-            </button>
+              예금
+            </span>
+          </a>
 
-            <!-- 외환 -->
-            <button
-              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+          <!-- 외환 -->
+          <a
+            href="#"
+            class="flex items-center space-x-3 hover:bg-gray-100 px-1 py-1 rounded transition"
+          >
+            <img
+              src="./src/img/외환.svg"
+              alt="외환"
+              class="w-[2.5rem] h-[2rem]"
+            />
+            <span
+              class="text-gray-900 font-daumBold"
+              style="font-size: clamp(1.3rem, 2vw, 2.5rem);"
             >
-              <img
-                src="./src/img/외환.svg"
-                alt=""
-                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
-              />
-              <span class="text-gray-700 text-[64px]">외환</span>
-            </button>
+              외환
+            </span>
+          </a>
 
-            <!-- 대출 -->
-            <button
-              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+          <!-- 대출 -->
+          <a
+            href="#"
+            class="flex items-center space-x-3 hover:bg-gray-100 px-1 py-1 rounded transition"
+          >
+            <img
+              src="./src/img/대출1.svg"
+              alt="대출"
+              class="w-[2.5rem] h-[2rem]"
+            />
+            <span
+              class="text-gray-900 font-daumBold"
+              style="font-size: clamp(1.3rem, 2vw, 2.5rem);"
             >
-              <img
-                src="./src/img/대출1.svg"
-                alt=""
-                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
-              />
-              <span class="text-gray-700 text-[64px]">대출</span>
-            </button>
+              대출
+            </span>
+          </a>
 
-            <!-- 펀드 -->
-            <button
-              class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors"
+          <!-- 펀드 -->
+          <a
+            href="#"
+            class="flex items-center space-x-3 hover:bg-gray-100 px-1 py-1 rounded transition"
+          >
+            <img
+              src="./src/img/펀드.svg"
+              alt="펀드"
+              class="w-[2.5rem] h-[2rem]"
+            />
+            <span
+              class="text-gray-900 font-daumBold"
+              style="font-size: clamp(1.3rem, 2vw, 2.5rem);"
             >
-              <img
-                src="./src/img/펀드.svg"
-                alt=""
-                class="h-12 w-12 xl:h-12 xl:w-12 mr-5"
-              />
-              <span class="text-gray-700 text-[64px]">펀드</span>
-            </button>
-          </div>
+              펀드
+            </span>
+          </a>
+        </div>
+
+        <!-- 유저 이미지 -->
+        <div class="flex-shrink-0">
+          <a href="#" class="hover:opacity-80">
+            <img
+              src="./src/img/user.png"
+              alt="유저"
+              class="w-[4rem] h-[4rem]"
+            />
+          </a>
         </div>
       </div>
     </nav>
     <main>
-      <h2 class="font-daumBold text-2xl">
+      <h2 class="font-daumBold text-2xl mt-12 text-center">
         우리은행 골든뱅킹 서비스 페이지입니다.
       </h2>
     </main>
