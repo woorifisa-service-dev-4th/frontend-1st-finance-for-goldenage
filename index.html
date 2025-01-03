@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/font/fonts.css" />
   </head>
+  <body class="bg-gray-100 w-full">
+    <!-- Navigation Bar -->
   <body class="bg-gray-100">
     <nav class="bg-white py-2 px-4 lg:px-8 md:px-6 sm:px-3 shadow-md">
       <div
@@ -22,6 +24,7 @@
             />
           </a>
         </div>
+        <!-- 메뉴 -->
 
         <div class="flex items-center gap-4 md:gap-6 lg:gap-8 flex-nowrap">
           <a
@@ -39,6 +42,7 @@
               예금
             </span>
           </a>
+          <!-- 외환 -->
 
           <a
             href="#"
@@ -55,6 +59,7 @@
               외환
             </span>
           </a>
+          <!-- 대출 -->
 
           <a
             href="#"
@@ -71,6 +76,7 @@
               대출
             </span>
           </a>
+          <!-- 펀드 -->
 
           <a
             href="#"
@@ -88,6 +94,7 @@
             </span>
           </a>
         </div>
+        <!-- 유저 이미지 -->
 
         <div class="flex-shrink-0">
           <a href="#" class="hover:opacity-80">
@@ -101,6 +108,106 @@
       </div>
     </nav>
     <main>
+      <div
+        class="flex font-daumBold text-2xl py-[69px] px-[60px] w-full justify-between"
+      >
+        <div
+          class="border-2 bg-[#0093BD] rounded-3xl p-[50px] w-1/5 h-[440px]"
+        >
+          <div class="text-white text-[22px] py-[15px]">
+            지금 많이 찾는 상품은?
+          </div>
+          <div
+            class="flex items-center text-white text-[48px] py-[15px]"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+          >
+            나에게 맞는
+            <img
+              src="./src/img/plane.png"
+              alt="이미지 설명"
+              class="ml-4 w-[48px] h-[48px]"
+            />
+          </div>
+          <div
+            class="text-yellow-300 text-[48px] py-[15px]"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+          >
+            추천 상품
+            <span
+              class="text-white text-[48px] py-[15px]"
+              style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+              >보기</span
+            >
+          </div>
+          <div class="flex py-[110px] text-white text-[22px] font-bold">
+            바로 가기
+            <img
+              src="./src/img/right-arrow.png"
+              alt="바로가기"
+              class="px-[15px]"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-between w-1/3">
+          <div>
+            <div
+              class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+            >
+            <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">계좌조회</span>하고
+            <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">이체</span>
+            <div class="ml-auto pr-4">
+              <img src="./src/img/WiBee.png" alt="바로가기" class="w-[73px] h-[100px]" />
+            </div>  
+          </div>
+          </div>
+          <div
+            class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+          >
+            간편한
+            <span class="" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+              >자산관리</span>
+              <div class="ml-auto pr-4">
+                <img src="./src/img/BomBom.png" alt="바로가기" class="w-[73px] h-[100px] text-[40px]" />
+              </div>
+          </div>
+          <div
+            class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+          >
+          <span class="" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">거래내역</span>확인
+          <div class="ml-auto pr-4">
+            <img src="./src/img/Dugi.png " alt="바로가기" class="w-[73px] h-[100px]" />
+          </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between w-1/3">
+          <div
+            class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+          >
+          간편한
+          <span class="" style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);">인터넷 환전 </span>
+          <div class="ml-auto pr-4">
+            <img src="./src/img/Dalbo.png" alt="바로가기" class="w-[73px] h-[100px]" />
+          </div>
+          </div>
+          <div
+            class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+          >
+          <span class="" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">금융상품</span>간편 가입
+          <div class="ml-auto pr-4">
+            <img src="./src/img/Cu.png" alt="바로가기" class="w-[73px] h-[100px]" />
+          </div>
+          </div>
+          <div
+            class="flex items-center border-2 bg-white p-4 pl-10 rounded-3xl h-[116px] text-[40px] shadow"
+          >
+          <span class="" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">다른 금융</span>조회
+          <div class="ml-auto pr-4">
+            <img src="./src/img/Pudding.png" alt="바로가기" class="w-[73px] h-[100px]" />
+          </div>
+          </div>
+        </div>
+      </div>
       <div
         class="relative w-full max-w-[1797px] mx-auto grid grid-cols-4 gap-4 mt-15"
       >
@@ -166,6 +273,7 @@
         </div>
       </div>
     </main>
+
     <footer></footer>
   </body>
 </html>
