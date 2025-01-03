@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: [
+                './index.html'
+            ],
+            theme: {
+                extend: {
+                    colors: {
+                        'wooriDeepBlue': '#0762b1',
+                        'wooriWhite': '#FFFFFF',
+                        'wooriLightBlue': '#36bcf6',
+                        'wooriBlue': '#057ecd'
+                    },
+                },
+            }
+        }
+    </script>
+</head>
+<body>
+
+<main class="py-8">
+    <!-- 필터링 메뉴 (e.g., 적금) -->
+    <div class="mb-3 mx-48 pb-4 border-b text-5xl font-bold">적금</div>
+
+    <!-- 상품 항목 1 -->
+    <div class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
+        <!-- 이미지 -->
+        <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
+
+        <!-- 금융 상품 설명 -->
+        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
+            <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
+            <div class="w-full text-4xl font-bold">WON 적금</div>
+            <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
+        </div>
+        <!-- // 금융 상품 설명 -->
+
+        <!-- 금리 정보 -->
+        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+            <div class="text-xl">최고 연</div>
+            <div class="text-4xl font-bold">3.6%</div>
+            <div class="text-xl">(12개월)</div>
+        </div>
+        <!-- // 금리 정보 -->
+    </div>
+
+    <!-- 상품 항목 2 -->
+    <div class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4">
+        <!-- 이미지 -->
+        <img src="./src/image/passbook.png" class="h-auto max-h-20 object-contain flex-grow-0 p-1">
+
+        <!-- 금융 상품 설명 -->
+        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
+            <div class="w-full text-xl text-wooriDeepBlue font-medium">목돈 모으기</div>
+            <div class="w-full text-4xl font-bold">WON 적금</div>
+            <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
+        </div>
+        <!-- // 금융 상품 설명 -->
+
+        <!-- 금리 정보 -->
+        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+            <div class="text-xl">최고 연</div>
+            <div class="text-4xl font-bold">3.6%</div>
+            <div class="text-xl">(12개월)</div>
+        </div>
+        <!-- // 금리 정보 -->
+    </div>
+</main>
+
+</body>
+</html>
