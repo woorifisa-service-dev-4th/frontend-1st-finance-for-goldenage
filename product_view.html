@@ -28,46 +28,59 @@
 <body>
 
 <main class="py-8">
-    <!-- Navigation Bar -->
-    <nav class="bg-white py-2 px-4 lg:px-8 md:px-6 sm:px-3 shadow-md">
-        <div class="container mx-auto max-w-[1600px] flex items-center gap-4 md:gap-6 lg:gap-8 flex-nowrap">
+    <!-- Header -->
+    <nav class="bg-white py-2 px-4 lg:px-8 md:px-6 mb-6 sm:px-3 shadow-md w-full">
+        <div class="container mx-auto flex items-center justify-between max-w-full px-4">
             <!-- 우리 금융 로고 -->
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0 w-[15rem] sm:w-[12rem] md:w-[14rem] lg:w-[15rem]">
                 <a href="#" class="hover:opacity-80">
-                    <img src="./src/img/logo.svg" alt="우리은행" class="w-[21rem] md:w-[16rem] xl:w-[21rem] h-auto" />
+                    <img src="./src/img/logo.svg" alt="우리은행" class="w-full h-auto"/>
                 </a>
+            </div>
+            <!-- // 우리 금융 로고 -->
+
+            <!-- 메뉴 (아이콘 + 글자) -->
+            <div class="flex items-center gap-4 sm:gap-6 md:gap-8 flex-nowrap overflow-x-auto w-full">
+                <!-- 예금 메뉴 -->
+                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+                    <img src="./src/img/저축.svg" alt="저축" class="w-[3rem] h-[2.5rem]" />
+                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">예금</span>
+                </a>
+                <!-- // 예금 메뉴 -->
+
+                <!-- 외환 메뉴 -->
+                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+                    <img src="./src/img/외환.svg" alt="외환" class="w-[3rem] h-[2.5rem]" />
+                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">외환</span>
+                </a>
+                <!-- // 외환 메뉴 -->
+
+                <!-- 대출 메뉴 -->
+                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+                    <img src="./src/img/대출1.svg" alt="대출" class="w-[3rem] h-[2.5rem]" />
+                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">대출</span>
+                </a>
+                <!-- // 대출 메뉴 -->
+
+                <!-- 펀드 메뉴 -->
+                <a href="#" class="flex items-center space-x-2 sm:space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
+                    <img src="./src/img/펀드.svg" alt="펀드" class="w-[3rem] h-[2.5rem]" />
+                    <span class="text-gray-900 font-daumBold text-[1.4rem] hidden md:block md:text-[1.2rem] lg:text-[2.6rem] xl:text-[3rem] whitespace-nowrap">펀드</span>
+                </a>
+                <!-- // 펀드 메뉴 -->
+
             </div>
 
-            <!-- 메뉴 -->
-            <div class="flex items-center gap-4 md:gap-6 lg:gap-8">
-                <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/저축.svg" alt="저축" class="w-[4rem] h-[3rem]" />
-                    <span class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]">예금</span>
-                </a>
-                <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/외환.svg" alt="외환" class="w-[4rem] h-[3rem]" />
-                    <span class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]">외환</span>
-                </a>
-                <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/대출1.svg" alt="대출" class="w-[4rem] h-[3rem]" />
-                    <span class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]">대출</span>
-                </a>
-                <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition">
-                    <img src="./src/img/펀드.svg" alt="펀드" class="w-[4rem] h-[3rem]" />
-                    <span class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]">펀드</span>
-                </a>
-            </div>
-
-            <!-- 유저 이미지 -->
-            <div class="flex-shrink-0">
+            <!-- 유저 프로필 이미지 -->
+            <div class="flex-shrink-0 w-[5rem] sm:w-[5rem]">
                 <a href="#" class="hover:opacity-80">
-                    <img src="./src/img/user.png" alt="유저" class="w-[6rem] h-[6rem]" />
+                    <img src="./src/img/user.png" alt="유저 프로필" class="w-full h-auto"/>
                 </a>
             </div>
+            <!-- // 유저 프로필 이미지 -->
         </div>
     </nav>
-
-
+    <!-- // Header -->
 
     <!-- 필터링 메뉴 (e.g., 적금) -->
     <div class="mb-3 mx-48 pb-4 border-b text-5xl font-bold">적금</div>
