@@ -10,6 +10,12 @@ module.exports = {
           return acc;
         }, {}),
       },
+      colors: {
+        wooriDeepBlue: "#0762b1",
+        wooriWhite: "#FFFFFF",
+        wooriLightBlue: "#36bcf6",
+        wooriBlue: "#057ecd",
+      },
     },
     fontFamily: {
       daumBold: ['WooridaumB'],
@@ -17,4 +23,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
