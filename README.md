@@ -162,6 +162,31 @@ Commit Message는 다음의 형식을 따르며,
 | ➕ | 종속성 추가 | 새로운 라이브러리나 종속성 추가. | `➕ lodash 종속성 추가` |
 | ➖ | 종속성 제거 | 사용하지 않는 라이브러리나 종속성 제거. | `➖ jQuery 제거` |
 
+<br>
+    
+## UI 스타일 가이드라인
+
+**폰트 서체**
+- Main font - Noto Sans KR
+- Sub font - 우리다움체
+
+
+**폰트 사이즈**
+1. 기본 텍스트 - 40px
+2. 헤더 - 64px
+3. 상세 내용 - 32px ~ 36px 사용
+
+
+**컬러 배색**
+- BACKGROUND COLOR : white
+- MAIN COLOR: #0093BD
+- SUB COLOR: #057ECD
+
+
+**여백 및 정렬**
+- 중앙 정렬 기본
+
+
 ## Reference
 
 [NHN Coding Convention for Markup Languages (HTML/CSS)](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)
