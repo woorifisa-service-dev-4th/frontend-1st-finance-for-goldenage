@@ -10,6 +10,12 @@ module.exports = {
           return acc;
         }, {}),
       },
+      colors: {
+        wooriDeepBlue: "#0762b1",
+        wooriWhite: "#FFFFFF",
+        wooriLightBlue: "#36bcf6",
+        wooriBlue: "#057ecd",
+      },
     },
     fontFamily: {
       daumBold: ['WooridaumB'],
@@ -17,4 +23,7 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
+
+// npx tailwindcss -i ./src/input.css -o ./src/output.css
+// 를 통해 수정 후 적용 가능
