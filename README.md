@@ -32,6 +32,23 @@
 
 <br>
 
+
+## UI 스타일 가이드라인
+
+1. 폰트
+    - [우리다움체](https://www.woorifg.com/kor/company/ci/font/contentsid/581/index.do)
+
+
+2. 컬러 배색
+
+    ![색상 조합](./docs/ColorCombination.png)
+
+
+3. 여백
+    - 들여쓰기: 4space
+    - 코드 그룹 간 1줄씩 빈 줄
+
+
 ## :triangular_flag_on_post: Convention
 
 ### File
