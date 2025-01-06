@@ -16,6 +16,21 @@ module.exports = {
         wooriLightBlue: "#36bcf6",
         wooriBlue: "#057ecd",
       },
+      screens: {
+        sm: '640px',
+        md: '878px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1600px', // 2xl 추가
+        '3xl': '1800px', // 3xl 추가
+      },
+      fontSize: (() => {
+        const fontSize = {};
+        for (let i = 1; i <= 100; i++) {
+          fontSize[(i / 100).toFixed(1)] = `${i / 100}rem`;
+        }
+        return fontSize;
+      })(),
     },
     fontFamily: {
       daumBold: ['WooridaumB'],
