@@ -109,7 +109,7 @@
 
 ### Branch Strategy
 
-![Git Flow 전략](./docs/git-flow.png)
+![Git Flow 전략](./docs/GitFlow.png)
 
 저희는 Git Flow 전략을 기반으로 개발을 진행하였습니다.  
 다만, 현재 프로젝트는 배포 계획이 없으므로 **Release 브랜치**는 사용하지 않았습니다.
