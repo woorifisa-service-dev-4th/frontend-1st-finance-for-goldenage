@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,87 +12,73 @@
   <body>
     <main>
       <!-- Header -->
-      <nav class="bg-white py-2 px-4 lg:px-8 md:px-6 sm:px-3 shadow-md">
+      <nav class="bg-white px-0 py-2 shadow-md 2xl:px-6 3xl:px-8">
         <div
-          class="container mx-auto max-w-[1600px] flex items-center gap-4 md:gap-6 lg:gap-8 flex-nowrap px-4 lg:px-8"
+          class="container mx-auto flex max-w-[1600px] flex-nowrap items-center justify-center gap-2 lg:px-8 3xl:gap-4"
         >
           <div class="flex-shrink-0">
             <a href="/frontend-1st-finance-for-goldenage" class="hover:opacity-80">
               <img
                 src="./src/img/Logo.svg"
                 alt="우리은행"
-                class="w-[21rem] md:w-[16rem] xl:w-[21rem] h-auto"
+                class="h-auto w-[21rem] md:w-[16rem] xl:w-[21rem]"
               />
             </a>
           </div>
           <!-- 메뉴 -->
-
-          <div class="flex items-center gap-4 md:gap-6 lg:gap-8 flex-nowrap">
+          <div
+            class="mx-0 flex flex-nowrap items-center gap-4 text-[4rem] md:gap-0 md:text-[1.8rem] lg:gap-1 lg:text-[1.95rem] xl:text-[2.2rem] 2xl:text-[3rem]"
+          >
+            <!-- 예금 -->
             <a
               href="/frontend-1st-finance-for-goldenage/product_view.html"
-              class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition"
+              class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
             >
               <img
                 src="./src/img/Save.svg"
                 alt="저축"
-                class="w-[4rem] h-[3rem]"
+                class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
               />
-              <span
-                class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]"
-              >
-                예금
-              </span>
+              <span class="font-daumBold text-gray-900">예금</span>
             </a>
             <!-- 외환 -->
 
             <a
               href="#"
-              class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition"
+              class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
             >
               <img
                 src="./src/img/Foreign-Exchange.svg"
                 alt="외환"
-                class="w-[4rem] h-[3rem]"
+                class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
               />
-              <span
-                class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]"
-              >
-                외환
-              </span>
+              <span class="font-daumBold text-gray-900">외환</span>
             </a>
             <!-- 대출 -->
 
             <a
               href="#"
-              class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition"
+              class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
             >
               <img
                 src="./src/img/Loan.svg"
                 alt="대출"
-                class="w-[4rem] h-[3rem]"
+                class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
               />
-              <span
-                class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]"
-              >
-                대출
-              </span>
+              <span class="font-daumBold text-gray-900">대출</span>
             </a>
             <!-- 펀드 -->
 
             <a
               href="#"
-              class="flex items-center space-x-4 hover:bg-gray-100 px-2 py-1 rounded transition"
+              class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
             >
               <img
                 src="./src/img/Fund.svg"
                 alt="펀드"
-                class="w-[4rem] h-[3rem]"
+                class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
               />
-              <span
-                class="text-gray-900 font-daumBold text-[4rem] 2xl:text-[4rem]"
-              >
-                펀드
-              </span>
+              <span class="font-daumBold text-gray-900">펀드</span>
             </a>
           </div>
           <!-- 유저 이미지 -->
@@ -102,7 +88,7 @@
               <img
                 src="./src/img/User.png"
                 alt="유저"
-                class="w-[6rem] h-[6rem]"
+                class="h-[6rem] w-[6rem] md:h-[4rem] md:w-[4rem] lg:h-[5rem] lg:w-[5rem]"
               />
             </a>
           </div>
@@ -111,22 +97,22 @@
       <!-- // Header -->
 
       <!-- 필터링 메뉴 (e.g., 적금) -->
-      <div class="mt-6 mb-3 mx-48 pb-4 border-b text-5xl font-bold">적금</div>
+      <div class="mx-48 mb-3 mt-6 border-b pb-4 text-5xl font-bold">적금</div>
 
       <!-- 상품 항목 1 -->
       <div
-        class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4"
+        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
       >
         <!-- 이미지 -->
         <img
           alt="passbook"
           src="./src/img/Passbook.png"
-          class="h-auto max-h-20 object-contain flex-grow-0 p-1"
+          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
         />
 
         <!-- 금융 상품 설명 -->
-        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
-          <div class="w-full text-xl text-wooriDeepBlue font-medium">
+        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
+          <div class="w-full text-xl font-medium text-wooriDeepBlue">
             목돈 모으기
           </div>
           <div class="w-full text-4xl font-bold">WON 적금</div>
@@ -135,7 +121,7 @@
         <!-- // 금융 상품 설명 -->
 
         <!-- 금리 정보 -->
-        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
           <div class="text-xl">최고 연</div>
           <div class="text-4xl font-bold">3.6%</div>
           <div class="text-xl">(12개월)</div>
@@ -145,18 +131,18 @@
 
       <!-- 상품 항목 2 -->
       <div
-        class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4"
+        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
       >
         <!-- 이미지 -->
         <img
           alt="passbook"
           src="./src/img/Passbook.png"
-          class="h-auto max-h-20 object-contain flex-grow-0 p-1"
+          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
         />
 
         <!-- 금융 상품 설명 -->
-        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
-          <div class="w-full text-xl text-wooriDeepBlue font-medium">
+        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
+          <div class="w-full text-xl font-medium text-wooriDeepBlue">
             목돈 모으기
           </div>
           <div class="w-full text-4xl font-bold">WON 적금</div>
@@ -165,7 +151,7 @@
         <!-- // 금융 상품 설명 -->
 
         <!-- 금리 정보 -->
-        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
           <div class="text-xl">최고 연</div>
           <div class="text-4xl font-bold">3.6%</div>
           <div class="text-xl">(12개월)</div>
@@ -175,18 +161,18 @@
 
       <!-- 상품 항목 3 -->
       <div
-        class="w-2/3 rounded-2xl border-4 border-wooriBlue m-4 p-6 flex justify-between items-center mx-auto space-x-4"
+        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
       >
         <!-- 이미지 -->
         <img
           alt="passbook"
           src="./src/img/Passbook.png"
-          class="h-auto max-h-20 object-contain flex-grow-0 p-1"
+          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
         />
 
         <!-- 금융 상품 설명 -->
-        <div class="flex flex-col items-center space-y-2 px-4 flex-grow">
-          <div class="w-full text-xl text-wooriDeepBlue font-medium">
+        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
+          <div class="w-full text-xl font-medium text-wooriDeepBlue">
             목돈 모으기
           </div>
           <div class="w-full text-4xl font-bold">WON 적금</div>
@@ -195,7 +181,7 @@
         <!-- // 금융 상품 설명 -->
 
         <!-- 금리 정보 -->
-        <div class="flex flex-col items-center space-y-1 px-4 flex-grow-0">
+        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
           <div class="text-xl">최고 연</div>
           <div class="text-4xl font-bold">3.6%</div>
           <div class="text-xl">(12개월)</div>

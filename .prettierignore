@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+*.json
+*.md
+*.mjs
+*.js
+*.css
+*.yml

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./*.html"],
   theme: {
@@ -16,10 +18,46 @@ module.exports = {
         wooriLightBlue: "#36bcf6",
         wooriBlue: "#057ecd",
       },
+      screens: {
+        sm: '640px',
+        md: '878px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1600px', // 2xl 추가
+        '3xl': '1800px', // 3xl 추가
+        /* *
+         * sd (720 x 480)
+         * hd (1280 x 720)
+         * fhd (1920 x 1080)
+         * qhd (2560 x 1440)
+         * uhd (3840 x 2160)
+         */
+      },
+      fontSize: (() => {
+        const fontSize = {};
+        for (let i = 1; i <= 100; i++) {
+          fontSize[(i / 100).toFixed(1)] = `${i / 100}rem`;
+        }
+        return fontSize;
+      })(),
+      textShadow: {
+        sm: '1px 1px 2px rgba(0, 0, 0, 0.6)',
+        md: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+      },
     },
     fontFamily: {
       daumBold: ['WooridaumB'],
       daumLight: ['WooridaumL'],
+    },
+    colors: {
+      ...colors,
+      // 이전 이름이 남아 있을 가능성이 있으므로 삭제
+      lightBlue: undefined,
+      warmGray: undefined,
+      trueGray: undefined,
+      coolGray: undefined,
+      blueGray: undefined,
+      wooriYellow: "#f1c40f", // 강조용
     },
   },
   plugins: [],
