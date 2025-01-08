@@ -51,6 +51,12 @@ module.exports = {
     },
     colors: {
       ...colors,
+      // 이전 이름이 남아 있을 가능성이 있으므로 삭제
+      lightBlue: undefined,
+      warmGray: undefined,
+      trueGray: undefined,
+      coolGray: undefined,
+      blueGray: undefined,
       wooriYellow: "#f1c40f", // 강조용
     },
   },
