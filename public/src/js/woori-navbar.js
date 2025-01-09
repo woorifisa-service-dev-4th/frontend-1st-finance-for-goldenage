@@ -52,20 +52,20 @@ class WooriNavbar extends HTMLElement {
               >
                 <!-- 예금 -->
                 <a
-                  href="/frontend-1st-finance-for-goldenage/product_view.html"
-                  class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
+                    href="#deposits"
+                    class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
-                  <img
-                    src="./src/img/Save.svg"
-                    alt="저축"
-                    class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-                  />
-                  <span class="font-daumBold text-gray-900">예금</span>
+                    <img
+                        src="./src/img/Save.svg"
+                        alt="예금"
+                        class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
+                    />
+                    <span class="font-daumBold text-gray-900">예금</span>
                 </a>
                 <!-- 외환 -->
 
                 <a
-                  href="#"
+                  href="#foreign-exchange"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img
@@ -78,7 +78,7 @@ class WooriNavbar extends HTMLElement {
                 <!-- 대출 -->
 
                 <a
-                  href="#"
+                  href="#loans"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img
@@ -91,7 +91,7 @@ class WooriNavbar extends HTMLElement {
                 <!-- 펀드 -->
 
                 <a
-                  href="#"
+                  href="#funds"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img

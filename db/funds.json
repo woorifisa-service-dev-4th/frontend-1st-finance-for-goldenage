@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "삼성 글로벌 AI 테크놀로지 펀드",
+        "description": "글로벌 시장에서 생성형 AI 기술 관련 주식에 투자하여 장기적인 성장을 목표로 하는 투자 상품입니다.",
+        "performance": [
+            {
+                "rate": "0.45%",
+                "period": "1개월"
+            },
+            {
+                "rate": "31.69%",
+                "period": "3개월"
+            },
+            {
+                "rate": "34.79%",
+                "period": "6개월"
+            },
+            {
+                "rate": "34.79%",
+                "period": "12개월"
+            }
+        ],
+        "createAt": "2024-12-21",
+        "viewCount": 200,
+        "link": "https://obank.kbstar.com/quics?page=C020710&cc=b064273:b064312&prcode=KF04011281",
+        "content": "이 펀드는 생성형 AI 관련 국내외 주요 기업의 주식을 중심으로 구성된 포트폴리오를 제공합니다.",
+        "category": "fund"
+    },
+    {
+        "id": 2,
+        "title": "키움 글로벌 IT&네트워크 펀드",
+        "description": "5G 및 IoT 기술 분야의 글로벌 리더 기업에 투자하여 기술 혁신의 성과를 공유하는 상품입니다.",
+        "performance": [
+            {
+                "rate": "1.89%",
+                "period": "1개월"
+            },
+            {
+                "rate": "20.3%",
+                "period": "3개월"
+            },
+            {
+                "rate": "13.4%",
+                "period": "6개월"
+            },
+            {
+                "rate": "51.2%",
+                "period": "12개월"
+            }
+        ],
+        "createAt": "2024-11-21",
+        "viewCount": 200,
+        "link": "https://obank.kbstar.com/quics?page=C020710&cc=b064273:b064312&prcode=KF04002571",
+        "content": "4차 산업혁명 관련 기술 분야의 대표 기업들에 집중적으로 투자합니다.",
+        "category": "fund"
+    }
+]
