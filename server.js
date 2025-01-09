@@ -11,13 +11,13 @@ import dummyFundsData from './db/funds.js';
 const API_SERVER_PORT = 3000;
 const app = express();
 
-// app.use(express.static('public')); 
+app.use(express.static('public')); 
 app.use(json());
 
-// // Frontend
-// app.get('/', (request, response) => {
-//     response.sendFile('index.html');
-// });
+// Frontend
+app.get('/', (request, response) => {
+    response.sendFile('index.html');
+});
 
 // 이벤트
 app.get('/events', (request, response) => {
