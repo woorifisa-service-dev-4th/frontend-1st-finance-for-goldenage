@@ -4,8 +4,6 @@ class WooriNavbar extends HTMLElement {
 
     this.attachShadow({ mode: 'open' });
 
-    // Shadow Root 내부에 TailwindCSS를 직접 주입 (CDN 또는 로컬 빌드 CSS)
-    // 만약 로컬 output.css를 쓰고 싶다면 <link rel="stylesheet" href="./src/output.css"> 식으로 넣어주면 됨
     this.shadowRoot.innerHTML = `
           <link rel="stylesheet" href="https://cdn.tailwindcss.com/3.4.16" />
           <style>
@@ -32,13 +30,12 @@ class WooriNavbar extends HTMLElement {
               gap: 2rem;
             }
           </style>
-          <style>@import url("./src/output.css");</style>
           <!-- 실제 Navbar HTML 코드 -->
           <div class="w-full items-center justify-center shadow-md">
             <nav class="bg-white px-0 py-2">
               <div class="container mx-auto flex items-center justify-center px-4">
               <div class="flex-shrink-0">
-                <a href="/frontend-1st-finance-for-goldenage" class="hover:opacity-80">
+                <a href="/" class="hover:opacity-80">
                   <img
                     src="./src/img/Logo.svg"
                     alt="우리은행"
@@ -52,20 +49,20 @@ class WooriNavbar extends HTMLElement {
               >
                 <!-- 예금 -->
                 <a
-                  href="/frontend-1st-finance-for-goldenage/product_view.html"
-                  class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
+                    id="link-deposits"
+                    class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
-                  <img
-                    src="./src/img/Save.svg"
-                    alt="저축"
-                    class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-                  />
-                  <span class="font-daumBold text-gray-900">예금</span>
+                    <img
+                        src="./src/img/Save.svg"
+                        alt="예금"
+                        class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
+                    />
+                    <span class="font-daumBold text-gray-900">예금</span>
                 </a>
                 <!-- 외환 -->
 
                 <a
-                  href="#"
+                  id="link-foreign-exchange"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img
@@ -78,7 +75,7 @@ class WooriNavbar extends HTMLElement {
                 <!-- 대출 -->
 
                 <a
-                  href="#"
+                  id="link-loans"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img
@@ -91,7 +88,7 @@ class WooriNavbar extends HTMLElement {
                 <!-- 펀드 -->
 
                 <a
-                  href="#"
+                  id="link-funds"
                   class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
                 >
                   <img
@@ -117,6 +114,23 @@ class WooriNavbar extends HTMLElement {
           </nav>
           </div>
         `;
+
+    // 이벤트 리스너 추가
+    this.shadowRoot.querySelector('#link-deposits').addEventListener('click', () => {
+      window.location.href = '/deposits';
+    });
+
+    this.shadowRoot.querySelector('#link-foreign-exchange').addEventListener('click', () => {
+      window.location.href = '/foreign-exchange';
+    });
+
+    this.shadowRoot.querySelector('#link-loans').addEventListener('click', () => {
+      window.location.href = '/loans';
+    });
+
+    this.shadowRoot.querySelector('#link-funds').addEventListener('click', () => {
+      window.location.href = '/funds';
+    });
   }
 }
 
