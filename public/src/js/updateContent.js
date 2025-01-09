@@ -3,28 +3,24 @@ const API_SERVER_PORT = 3000;
 async function fetchData(endpoint) {
     const response = await fetch(`http://localhost:${API_SERVER_PORT}/${endpoint}`)
         .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
         .catch(error => {
             console.error(`Error fetching data from ${endpoint}:`, error);
-        })
-        .finally(() => {
-            console.log(`Fetching data from ${endpoint} completed.`);
         });
 
-    return response;
+    // 필독!!! resposne가 JSON이 아니라 배열로 Return 되고 있어요!!!!!
+    // 서버 잘못 짰어요... 미안해요...ㅠㅠ
+    return response ? response : null;
 }
 
 function updateContent(data, elementId) {
     if (data) {
-        let content = data.title;
+        const content = data.title;
+        console.log(content);
 
-        if (content.length > 10) {
-            content = content.substring(0, 10) + '...';
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.setAttribute('content', content);
         }
-
-        document.getElementById(elementId).innerText = content;
     }
 }
 
@@ -40,7 +36,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let index = 0;
     setInterval(() => {
-        updateContent(data[index], elementIds[index]);
+        // 필독!!! resposne가 JSON이 아니라 배열로 Return 되고 있어요!!!!!
+        // 서버 잘못 짰어요... 미안해요...ㅠㅠ
+        const fetchedData = data[index];
+        const randomIndex = Math.floor(Math.random() * fetchedData.length);
+
+        // 랜덤한 데이터로 업데이트
+        updateContent(fetchedData[randomIndex], elementIds[index]);
+
         index = (index + 1) % endpoints.length;
     }, 1000);
 
