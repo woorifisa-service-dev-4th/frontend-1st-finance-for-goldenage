@@ -1,4 +1,3 @@
-const ITEMS_PER_PAGE = 5; // 한 페이지에 보여줄 항목 수
 let currentPage = 1; // 현재 페이지
 
 // DOM 요소
