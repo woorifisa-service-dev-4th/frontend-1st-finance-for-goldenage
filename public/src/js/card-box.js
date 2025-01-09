@@ -54,7 +54,7 @@ class WooriBox extends HTMLElement {
       }
 
       if (name === 'icon') {
-        const iconContainer = this.shadowRoot.querySelector('#icon-container');
+        const iconContainer = this.shadowRoot.querySelector('.icon-container');
         
         if (newValue) {
             // 아이콘이 있을 때
