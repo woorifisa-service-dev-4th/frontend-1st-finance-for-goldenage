@@ -94,6 +94,7 @@
       </div>
     </nav>
     
+    <woori-navbar></woori-navbar>
     <!-- Main Section -->
     <main class="relative mx-auto mt-15 max-w-[1797px] font-daumBold text-2xl">
         <div class="flex items-center" >
@@ -193,66 +194,15 @@
       <div
         class="relative mx-auto mt-15 grid w-full max-w-[1797px] grid-cols-4 gap-4"
       >
-        <div
-          class="flex flex-col items-center rounded-[30px] bg-white p-6 shadow-md"
-        >
-          <h3 class="font-['Noto Sans'] mb-4 text-[40px] font-bold text-black">
-            우리 소식
-          </h3>
-          <div class="mb-6 w-5/6 border-t-2 border-[#0093bd]"></div>
-          <p
-            class="font-['Noto Sans'] text-center text-2xl font-bold text-black"
-          >
-            [채용] 2024년 우리은행 ...
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col items-center rounded-[30px] bg-white p-6 shadow-md"
-        >
-          <h3 class="font-['Noto Sans'] mb-4 text-[40px] font-bold text-black">
-            상품/약관공시실
-          </h3>
-          <div class="mb-6 w-5/6 border-t-2 border-[#0093bd]"></div>
-          <p
-            class="font-['Noto Sans'] text-center text-2xl font-bold text-black"
-          >
-            주택청약종합저축 업무 시행 ...
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col items-center rounded-[30px] bg-white p-6 shadow-md"
-        >
-          <h3 class="font-['Noto Sans'] mb-4 text-[40px] font-bold text-black">
-            우리 이벤트
-          </h3>
-          <div class="mb-6 w-5/6 border-t-2 border-[#0093bd]"></div>
-          <p
-            class="font-['Noto Sans'] text-center text-2xl font-bold text-black"
-          >
-            우리 아이 통장 만들고 최대 ... <br />
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col items-center rounded-[30px] bg-white p-6 shadow-md"
-        >
-          <h3 class="mb-4 font-['Inter'] text-[40px] font-bold text-black">
-            고객센터
-          </h3>
-          <div class="mb-6 w-5/6 border-t-2 border-[#0093bd]"></div>
-          <div class="flex items-center gap-4">
-            <img
-              alt="상담전화"
-              class="h-[60px] w-[60px]"
-              src="./src/img/AS.png"
-            />
-            <p class="font-['Inter'] text-[40px] font-bold text-black">
-              1588 - 5000
-            </p>
-          </div>
-        </div>
+      <woori-box title="공지사항" content="2024년 우리은행 ..."></woori-box>
+      <woori-box title="우리 소식" content="[채용] 2024년 우리은행 ..."></woori-box>
+      <woori-box title="상품/약관공시실" content="주택청약종합저축 업무 시행 ..."></woori-box>
+      <woori-box
+        title="고객센터"
+        content="고객 상담은 아래 번호로!"
+        icon="./src/img/AS.png"
+        icon-text="1588 - 5000"
+      ></woori-box>
       </div>
     </main>
 
