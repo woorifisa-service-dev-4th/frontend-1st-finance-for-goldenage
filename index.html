@@ -7,91 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/font/fonts.css" />
+    <script src="./src/js/index.js" type="module" defer></script>
   </head>
   <body class="w-full bg-gray-100">
     <!-- Navigation Bar -->
-    <nav class="bg-white px-0 py-2 shadow-md 2xl:px-6 3xl:px-8">
-      <div
-        class="container mx-auto flex max-w-[1600px] flex-nowrap items-center justify-center gap-2 lg:px-8 3xl:gap-4"
-      >
-        <div class="flex-shrink-0">
-          <a href="/frontend-1st-finance-for-goldenage" class="hover:opacity-80">
-            <img
-              src="./src/img/Logo.svg"
-              alt="우리은행"
-              class="h-auto w-[21rem] md:w-[16rem] xl:w-[21rem]"
-            />
-          </a>
-        </div>
-        <!-- 메뉴 -->
-        <div
-          class="mx-0 flex flex-nowrap items-center gap-4 text-[4rem] md:gap-0 md:text-[1.8rem] lg:gap-1 lg:text-[1.95rem] xl:text-[2.2rem] 2xl:text-[3rem]"
-        >
-          <!-- 예금 -->
-          <a
-            href="/frontend-1st-finance-for-goldenage/product_view.html"
-            class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
-          >
-            <img
-              src="./src/img/Save.svg"
-              alt="저축"
-              class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-            />
-            <span class="font-daumBold text-gray-900">예금</span>
-          </a>
-          <!-- 외환 -->
-
-          <a
-            href="#"
-            class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
-          >
-            <img
-              src="./src/img/Foreign-Exchange.svg"
-              alt="외환"
-              class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-            />
-            <span class="font-daumBold text-gray-900">외환</span>
-          </a>
-          <!-- 대출 -->
-
-          <a
-            href="#"
-            class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
-          >
-            <img
-              src="./src/img/Loan.svg"
-              alt="대출"
-              class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-            />
-            <span class="font-daumBold text-gray-900">대출</span>
-          </a>
-          <!-- 펀드 -->
-
-          <a
-            href="#"
-            class="flex items-center space-x-4 rounded px-2 py-1 transition hover:bg-gray-100"
-          >
-            <img
-              src="./src/img/Fund.svg"
-              alt="펀드"
-              class="h-[3rem] w-[4rem] md:h-[2rem] md:w-[3rem] lg:h-[2.5rem] lg:w-[3.5rem]"
-            />
-            <span class="font-daumBold text-gray-900">펀드</span>
-          </a>
-        </div>
-        <!-- 유저 이미지 -->
-
-        <div class="flex-shrink-0">
-          <a href="#" class="hover:opacity-80">
-            <img
-              src="./src/img/User.png"
-              alt="유저"
-              class="h-[6rem] w-[6rem] md:h-[4rem] md:w-[4rem] lg:h-[5rem] lg:w-[5rem]"
-            />
-          </a>
-        </div>
-      </div>
-    </nav>
+    <woori-navbar></woori-navbar>
     <!-- Main Section -->
     <main>
       <div
