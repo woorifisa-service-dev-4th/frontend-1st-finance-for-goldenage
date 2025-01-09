@@ -1,16 +1,17 @@
-FROM node:14
+FROM node:18-alpine
 
 WORKDIR /app
 
-#npm install 을 위해, package.json과 package-lock.json을 먼저 copy해둠
-COPY package*.json /app/
+COPY package*.json ./
 
 RUN npm install
 
-COPY . /app
+COPY tailwind.config.js ./tailwind.config.js
+COPY public/src/input.css ./public/src/input.css
+RUN npx tailwindcss -i ./public/src/input.css -o ./public/src/output.css --minify
+
+COPY . .
 
 EXPOSE 3000
 
-#컨테이너가 켜지자마자 실행할 명령어 
-#npm start : package.json의 scripts에 있는 start 명령어를 실행
 CMD ["npm", "start"]
