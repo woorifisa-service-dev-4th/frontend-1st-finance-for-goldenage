@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/font/fonts.css" />
+    <script type="module" defer src="./src/js/index.js"></script>
   </head>
 
   <body>
@@ -100,94 +101,34 @@
       <div class="mx-48 mb-3 mt-6 border-b pb-4 text-5xl font-bold">적금</div>
 
       <!-- 상품 항목 1 -->
-      <div
-        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
-      >
-        <!-- 이미지 -->
-        <img
-          alt="passbook"
-          src="./src/img/Passbook.png"
-          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
-        />
-
-        <!-- 금융 상품 설명 -->
-        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
-          <div class="w-full text-xl font-medium text-wooriDeepBlue">
-            목돈 모으기
-          </div>
-          <div class="w-full text-4xl font-bold">WON 적금</div>
-          <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
-        </div>
-        <!-- // 금융 상품 설명 -->
-
-        <!-- 금리 정보 -->
-        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
-          <div class="text-xl">최고 연</div>
-          <div class="text-4xl font-bold">3.6%</div>
-          <div class="text-xl">(12개월)</div>
-        </div>
-        <!-- // 금리 정보 -->
-      </div>
+      <product-item
+        image="예금"
+        category="목돈 모으기"
+        title="WON 적금"
+        description="복잡하지 않고 간단한 적금"
+        rate="3.6%"
+        duration="(12개월)"
+      ></product-item>
 
       <!-- 상품 항목 2 -->
-      <div
-        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
-      >
-        <!-- 이미지 -->
-        <img
-          alt="passbook"
-          src="./src/img/Passbook.png"
-          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
-        />
-
-        <!-- 금융 상품 설명 -->
-        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
-          <div class="w-full text-xl font-medium text-wooriDeepBlue">
-            목돈 모으기
-          </div>
-          <div class="w-full text-4xl font-bold">WON 적금</div>
-          <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
-        </div>
-        <!-- // 금융 상품 설명 -->
-
-        <!-- 금리 정보 -->
-        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
-          <div class="text-xl">최고 연</div>
-          <div class="text-4xl font-bold">3.6%</div>
-          <div class="text-xl">(12개월)</div>
-        </div>
-        <!-- // 금리 정보 -->
-      </div>
+      <product-item
+        image="예금"
+        category="목돈 모으기"
+        title="WON 적금"
+        description="복잡하지 않고 간단한 적금"
+        rate="3.6%"
+        duration="(12개월)"
+      ></product-item>
 
       <!-- 상품 항목 3 -->
-      <div
-        class="m-4 mx-auto flex w-2/3 items-center justify-between space-x-4 rounded-2xl border-4 border-wooriBlue p-6"
-      >
-        <!-- 이미지 -->
-        <img
-          alt="passbook"
-          src="./src/img/Passbook.png"
-          class="h-auto max-h-20 flex-grow-0 object-contain p-1"
-        />
-
-        <!-- 금융 상품 설명 -->
-        <div class="flex flex-grow flex-col items-center space-y-2 px-4">
-          <div class="w-full text-xl font-medium text-wooriDeepBlue">
-            목돈 모으기
-          </div>
-          <div class="w-full text-4xl font-bold">WON 적금</div>
-          <div class="w-full text-2xl">복잡하지 않고 간단한 적금</div>
-        </div>
-        <!-- // 금융 상품 설명 -->
-
-        <!-- 금리 정보 -->
-        <div class="flex flex-grow-0 flex-col items-center space-y-1 px-4">
-          <div class="text-xl">최고 연</div>
-          <div class="text-4xl font-bold">3.6%</div>
-          <div class="text-xl">(12개월)</div>
-        </div>
-        <!-- // 금리 정보 -->
-      </div>
+      <product-item
+        image="예금"
+        category="목돈 모으기"
+        title="WON 적금"
+        description="복잡하지 않고 간단한 적금"
+        rate="3.6%"
+        duration="(12개월)"
+      ></product-item>
     </main>
   </body>
 </html>
