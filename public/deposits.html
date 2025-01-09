@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/font/fonts.css" />
+    <script type="module" defer src="./src/js/index.js"></script>
+  </head>
+
+  <body id="deposits">
+    <main>
+      <!-- Navigation Bar -->
+      <div class="w-full">
+        <woori-navbar></woori-navbar>
+      </div>
+      <!-- //Navigation Bar -->
+      <!-- 상품 리스트 -->
+      <div class="mx-48 my-6">
+        <div class="mb-3 border-b pb-4 text-5xl font-bold">예금</div>
+        <div id="product-list" class="space-y-6">
+          <!-- 상품 항목이 JS로 추가됩니다 -->
+        </div>
+
+        <!-- 페이지네이션 바 -->
+        <div id="pagination" class="flex justify-center space-x-2 mt-6">
+          <!-- 페이지네이션 버튼이 JS로 추가됩니다 -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
