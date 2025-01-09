@@ -1,0 +1,53 @@
+name: CI-CD
+
+on:
+  push:
+    branches: [ main ]
+
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+  
+jobs:
+  build_test:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        node-version: [14.x]
+        
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+  deploy:
+      runs-on: self-hosted
+      needs: [build_test]
+
+      steps:
+        - name: checkout repository
+          uses: actions/checkout@v2
+
+        - name: Set up QEMU
+          uses: docker/setup-qemu-action@v1
+      
+        - name: Set up Docker Buildx
+          uses: docker/setup-buildx-action@v1
+
+        - name: Build and Run Docker Container
+          run: |
+            docker stop service || true
+            docker rm service || true
+            docker rmi finance-for-goldenage:latest || true
+            docker build . --file Dockerfile --tag finance-for-goldenage:latest
+            docker run -d -p 80:3000 --name service finance-for-goldenage:latest
+          
