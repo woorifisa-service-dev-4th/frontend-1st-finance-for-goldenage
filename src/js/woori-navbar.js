@@ -7,12 +7,8 @@ class WooriNavbar extends HTMLElement {
     // Shadow Root 내부에 TailwindCSS를 직접 주입 (CDN 또는 로컬 빌드 CSS)
     // 만약 로컬 output.css를 쓰고 싶다면 <link rel="stylesheet" href="./src/output.css"> 식으로 넣어주면 됨
     this.shadowRoot.innerHTML = `
-          <!-- Tailwind CDN -->
           <link rel="stylesheet" href="https://cdn.tailwindcss.com/3.4.16" />
-          <style>
-            /* 빌드된 TailwindCSS 스타일 */
-            @import url("./src/output.css");
-          </style>
+          <style>@import url("./src/output.css");</style>
           <!-- 실제 Navbar HTML 코드 -->
           <nav class="bg-white px-0 py-2 shadow-md 2xl:px-6 3xl:px-8">
             <div
@@ -23,13 +19,13 @@ class WooriNavbar extends HTMLElement {
                   <img
                     src="./src/img/Logo.svg"
                     alt="우리은행"
-                    class="h-auto w-[21rem] md:w-[16rem] xl:w-[21rem]"
+                    class="2xl:w-[21rem] md:w-[16rem] xl:w-[21rem] w-[12rem]"
                   />
                 </a>
               </div>
               <!-- 메뉴 -->
               <div
-                class="mx-0 flex flex-nowrap items-center gap-4 text-[4rem] md:gap-0 md:text-[1.8rem] lg:gap-1 lg:text-[1.95rem] xl:text-[2.2rem] 2xl:text-[3rem]"
+                class="mx-0 flex flex-nowrap items-center gap-4 text-[1.5rem] md:gap-0 md:text-[1.8rem] lg:gap-1 lg:text-[1.95rem] xl:text-[2.2rem] 2xl:text-[3rem]"
               >
                 <a
                   href="/frontend-1st-finance-for-goldenage/product_view.html"
