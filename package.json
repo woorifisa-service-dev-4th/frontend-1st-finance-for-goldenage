@@ -12,5 +12,8 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
