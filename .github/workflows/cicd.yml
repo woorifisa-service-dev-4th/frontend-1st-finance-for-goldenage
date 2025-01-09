@@ -3,7 +3,7 @@ name: Build and Deploy Woori Node App
 on:
   push:
     branches:
-      - 46-cicd
+      - main
 
 jobs:
   build-and-deploy:
