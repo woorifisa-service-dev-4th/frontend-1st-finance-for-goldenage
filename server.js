@@ -102,7 +102,7 @@ app.get('/products/funds', (request, response) => {
 //////////////////////////////////////////////////////////////////////////
 
 // 한 페이지에 보여줄 데이터 수
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 5;
 
 // Pagination
 app.get('/products/deposits/:page', (request, response) => {

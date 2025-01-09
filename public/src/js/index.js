@@ -1,5 +1,5 @@
 import "./woori-navbar.js";
-import "./card-box.js";
-import "./item-card.js";
-import "./ServiceCard.js";
+import "./woori-box.js";
+import "./product-item.js";
+import "./card-button.js";
 import "./pagination.js";

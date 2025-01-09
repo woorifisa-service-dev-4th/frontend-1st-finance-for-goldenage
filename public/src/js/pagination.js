@@ -24,21 +24,44 @@ const renderProducts = (products) => {
     productList.innerHTML = ''; // 기존 내용을 초기화
 
     products.forEach((product) => {
-        // 웹 컴포넌트 생성
         const productItem = document.createElement('product-item');
 
-        // 속성 설정
-        productItem.setAttribute('image', currentType); // 상품 유형에 따라 이미지 설정
-        productItem.setAttribute('category', product.category || '카테고리 없음');
-        productItem.setAttribute('title', product.name || '상품명 없음');
-        productItem.setAttribute('description', product.description || '상품 설명 없음');
-        productItem.setAttribute('rate', product.rate ? `연 ${product.rate}%` : '금리 없음');
-        productItem.setAttribute('duration', product.duration || '기간 정보 없음');
+        // 상품 유형별 데이터 매핑
+        if (currentType === 'deposits') {
+            productItem.setAttribute('image', '예금');
+            productItem.setAttribute('category', product.category || '카테고리 없음');
+            productItem.setAttribute('title', product.title || '상품명 없음');
+            productItem.setAttribute('description', product.description || '상품 설명 없음');
+            productItem.setAttribute('rate', product.rate || '금리 없음');
+            productItem.setAttribute('duration', product.period ? `${product.period}개월` : '기간 정보 없음');
+        } else if (currentType === 'foreign-exchange') {
+            productItem.setAttribute('image', '외환');
+            productItem.setAttribute('category', product.category || '카테고리 없음');
+            productItem.setAttribute('title', product.title || '상품명 없음');
+            productItem.setAttribute('description', product.description || '상품 설명 없음');
+            productItem.setAttribute('rate', '금리 없음'); // 외환에는 금리 없음
+            productItem.setAttribute('duration', '기간 정보 없음'); // 외환에는 기간 정보 없음
+        } else if (currentType === 'loans') {
+            productItem.setAttribute('image', '대출');
+            productItem.setAttribute('category', product.category || '카테고리 없음');
+            productItem.setAttribute('title', product.title || '상품명 없음');
+            productItem.setAttribute('description', product.condition || '상품 설명 없음');
+            productItem.setAttribute('rate', product.interest || '금리 없음');
+            productItem.setAttribute('duration', product.maxTerm ? `${product.maxTerm}개월` : '기간 정보 없음');
+        } else if (currentType === 'funds') {
+            productItem.setAttribute('image', '펀드');
+            productItem.setAttribute('category', product.category || '카테고리 없음');
+            productItem.setAttribute('title', product.title || '상품명 없음');
+            productItem.setAttribute('description', product.description || '상품 설명 없음');
+            productItem.setAttribute('rate', '금리 없음'); // 펀드는 금리 없음
+            productItem.setAttribute('duration', '기간 정보 없음'); // 펀드에는 기간 정보 없음
+        }
 
         // product-item을 productList에 추가
         productList.appendChild(productItem);
     });
 };
+
 
 // 페이지네이션 버튼 렌더링
 const renderPagination = (totalPages) => {
