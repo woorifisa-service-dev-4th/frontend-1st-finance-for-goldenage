@@ -1,53 +1,31 @@
-name: CI-CD
+name: Build and Deploy Woori Node App
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
-  
 jobs:
-  build_test:
-    runs-on: self-hosted
-    strategy:
-      matrix:
-        node-version: [14.x]
-        
+  build-and-deploy:
+    runs-on: self-hosted  # Runner가 설치된 VM에서 실행
     steps:
-      - name: checkout repository
-        uses: actions/checkout@v2
+      # 1. 소스 코드 체크아웃
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-      - name: setup node
-        uses: actions/setup-node@master
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
+      # 2. 기존 컨테이너 및 이미지 정리
+      - name: Clean up old Docker containers and images
         run: |
-          npm install
+          docker ps -q --filter "name=woori-node-app" | xargs -r docker stop
+          docker ps -aq --filter "name=woori-node-app" | xargs -r docker rm
+          docker images -q woori-node-app | xargs -r docker rmi -f
 
-  deploy:
-      runs-on: self-hosted
-      needs: [build_test]
+      # 3. Docker 이미지 빌드
+      - name: Build Docker Image
+        run: |
+          docker build -t woori-node-app .
 
-      steps:
-        - name: checkout repository
-          uses: actions/checkout@v2
-
-        - name: Set up QEMU
-          uses: docker/setup-qemu-action@v1
-      
-        - name: Set up Docker Buildx
-          uses: docker/setup-buildx-action@v1
-
-        - name: Build and Run Docker Container
-          run: |
-            docker stop service || true
-            docker rm service || true
-            docker rmi finance-for-goldenage:latest || true
-            docker build . --file Dockerfile --tag finance-for-goldenage:latest
-            docker run -d -p 80:3000 --name service finance-for-goldenage:latest
-          
+      # 4. Docker 컨테이너 실행
+      - name: Run Docker Container
+        run: |
+          docker run -d --name woori-node-app -p 80:3000 woori-node-app
