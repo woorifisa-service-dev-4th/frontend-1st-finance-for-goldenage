@@ -1,7 +1,7 @@
 const API_SERVER_PORT = 80;
 
 async function fetchData(endpoint) {
-    const response = await fetch(`http://localhost:${API_SERVER_PORT}/${endpoint}`)
+    const response = await fetch(`/${API_SERVER_PORT}/${endpoint}`)
         .then(response => response.json())
         .catch(error => {
             console.error(`Error fetching data from ${endpoint}:`, error);
