@@ -1,4 +1,4 @@
-const API_SERVER_PORT = 3000;
+const API_SERVER_PORT = 80;
 
 async function fetchData(endpoint) {
     const response = await fetch(`http://localhost:${API_SERVER_PORT}/${endpoint}`)
