@@ -28,4 +28,4 @@ jobs:
       # 4. Docker 컨테이너 실행
       - name: Run Docker Container
         run: |
-          docker run -d --name woori-node-app -p 3000:3000 woori-node-app
+          docker run -d --name woori-node-app -p 80:3000 woori-node-app
