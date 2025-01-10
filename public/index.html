@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우리은행_골든뱅킹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/font/fonts.css" />
+    <script src="./src/js/index.js" type="module" defer></script>
+
+  </head>
+  <body class="w-full bg-gray-100">
+    <!-- Navigation Bar -->
+    <div class="w-full">
+      <woori-navbar></woori-navbar>
+    </div>
+    <!-- //Navigation Bar -->
+
+    <!-- Main Section -->
+    <main class="relative mx-auto mt-6 max-w-[1797px] font-daumBold text-2xl">
+        <div class="flex items-center" >
+          <div class="h-[440px] w-[422px] bg-[#0093BD] rounded-3xl p-[50px] mr-12">
+              <div class="py-[1rem] text-[22px] text-white ">
+                지금 많이 찾는 상품은?
+              </div>
+              <div
+                class="flex items-center py-[15px] text-[36px] text-white"
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+              >
+                나에게 맞는
+                <img
+                  src="./src/img/Plane.png"
+                  alt="이미지 설명"
+                  class="ml-4 h-[48px] w-[48px]"
+                />
+              </div>
+              <div
+                class="py-[15px] text-[36px] text-yellow-300"
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+              >
+                추천 상품
+                <span
+                  class="py-[15px] text-[36px] text-white"
+                  style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)"
+                  >보기</span
+                >
+              </div>
+              <div class="flex py-[110px] text-[22px] font-bold text-white">
+                바로 가기
+                <img
+                  src="./src/img/Right-arrow.png"
+                  alt="바로가기"
+                  class="px-[15px]"
+                />
+            </div>
+          </div>
+
+        <!-- Service Button -->
+          <div class="grid grid-cols-2 gap-10 gap-x-20 p-8">
+            <!-- 계좌조회 섹션 -->
+            <card-button href="#" image="./src/img/WiBee.png">
+              <span slot="text">
+                <p>
+                  <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">계좌조회</span>하고 
+                  <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">이체</span>
+                </p>
+              </span>
+            </card-button>
+            <!-- //계좌조회 섹션 -->
+
+            <!-- 자산관리 섹션 -->
+            <card-button href="#" image="./src/img/BomBom.png">
+              <span slot="text">
+                <p>간편한 <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">자산관리</span></p>
+              </span>
+            </card-button>
+            <!-- //자산관리 섹션 -->
+
+            <!-- 거래내역 섹션 -->
+            <card-button href="#" image="./src/img/Dugi.png">
+              <span slot="text">
+                <p><span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">거래내역</span> 확인</p>
+              </span>
+            </card-button>
+            <!-- //거래내역 섹션 -->
+
+            <!-- 인터넷 환전 섹션 -->
+            <card-button href="#" image="./src/img/Dalbo.png">
+              <span slot="text">
+                <p>간편한 <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">인터넷 환전</span></p>
+              </span>
+            </card-button>
+            <!-- //인터넷 환전 섹션 -->
+
+            <!-- 금융상품 섹션 -->
+            <card-button href="#" image="./src/img/Cu.png">
+              <span slot="text">
+                <p><span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">금융상품</span> 간편 가입</p>
+              </span>
+            </card-button>
+            <!-- //금융상품 섹션 -->
+
+            <!-- 다른 금융 섹션 -->
+            <card-button href="#" image="./src/img/Pudding.png">
+              <span slot="text">
+                <p>다른 <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">금융 조회</span></p>
+              </span>
+            </card-button>
+            <!-- //다른 금융 섹션 -->
+          </div>
+        </div>
+        <!-- //Service Button -->
+
+      <div
+        class="grid w-full max-w-[1797px] grid-cols-4 gap-4"
+      >
+      <woori-box id="events-content" title="공지사항" content="Loading..."></woori-box>
+      <woori-box id="news-content" title="우리 소식" content="Loading..."></woori-box>
+      <woori-box id="products-content" title="상품/약관공시실" content="Loading..."></woori-box>
+      <woori-box
+        title="고객센터"
+        content="고객 상담은 아래 번호로!"
+        icon="./src/img/AS.png"
+        icon-text="1588 - 5000"
+      ></woori-box>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
